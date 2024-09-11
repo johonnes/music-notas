@@ -1,0 +1,5 @@
+site_name: Contas
+
+theme:
+  name: material
+  language: pt-BR
