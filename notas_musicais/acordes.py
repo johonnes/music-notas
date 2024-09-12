@@ -35,7 +35,11 @@ def acorde(cifra: str) -> dict[str, list[str]]:
 
     Returns:
         Um dicionário com as notas e o graus correspondentes as escala maior
-            
+
+
+
+
+
     Examples:
        >>> acorde('C')
        {'notas': ['C', 'E', 'G'], 'graus': ['I', 'III', 'V']}
