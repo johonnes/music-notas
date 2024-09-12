@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["johonnes <wjohonnes@gmail.com>"]
 readme = "README.md"
+packages = [{include = "notas_musicais"}]
 classifiers = [
     # Education
     "Topic :: Education",
