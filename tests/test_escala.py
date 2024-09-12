@@ -34,44 +34,34 @@ def test_tonalidade_inexistente():
 
 
 @mark.parametrize(
-    'tonica,esperado',
+    'tonica,tonalidade, esperado',
     [
-        ('c', ['C', 'D', 'E', 'F', 'G', 'A', 'B']),
-        ('c#', ['C#', 'D#', 'F', 'F#', 'G#', 'A#', 'C']),
-        ('d', ['D', 'E', 'F#', 'G', 'A', 'B', 'C#']),
-        ('d#', ['D#', 'F', 'G', 'G#', 'A#', 'C', 'D']),
-        ('e', ['E', 'F#', 'G#', 'A', 'B', 'C#', 'D#']),
-        ('f', ['F', 'G', 'A', 'A#', 'C', 'D', 'E']),
-        ('f#', ['F#', 'G#', 'A#', 'B', 'C#', 'D#', 'F']),
-        ('g', ['G', 'A', 'B', 'C', 'D', 'E', 'F#']),
-        ('g#', ['G#', 'A#', 'C', 'C#', 'D#', 'F', 'G']),
-        ('a', ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#']),
-        ('a#', ['A#', 'C', 'D', 'D#', 'F', 'G', 'A']),
-        ('b', ['B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#']),
+        ('c', 'maior', ['C', 'D', 'E', 'F', 'G', 'A', 'B']),
+        ('c#', 'maior', ['C#', 'D#', 'F', 'F#', 'G#', 'A#', 'C']),
+        ('d', 'maior', ['D', 'E', 'F#', 'G', 'A', 'B', 'C#']),
+        ('d#', 'maior', ['D#', 'F', 'G', 'G#', 'A#', 'C', 'D']),
+        ('e', 'maior', ['E', 'F#', 'G#', 'A', 'B', 'C#', 'D#']),
+        ('f', 'maior', ['F', 'G', 'A', 'A#', 'C', 'D', 'E']),
+        ('f#', 'maior', ['F#', 'G#', 'A#', 'B', 'C#', 'D#', 'F']),
+        ('g', 'maior', ['G', 'A', 'B', 'C', 'D', 'E', 'F#']),
+        ('g#', 'maior', ['G#', 'A#', 'C', 'C#', 'D#', 'F', 'G']),
+        ('a', 'maior', ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#']),
+        ('a#', 'maior', ['A#', 'C', 'D', 'D#', 'F', 'G', 'A']),
+        ('b', 'maior', ['B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#']),
+        ('c', 'menor', ['C', 'D', 'D#', 'F', 'G', 'G#', 'A#']),
+        ('c#', 'menor', ['C#', 'D#', 'E', 'F#', 'G#', 'A', 'B']),
+        ('d', 'menor', ['D', 'E', 'F', 'G', 'A', 'A#', 'C']),
+        ('d#', 'menor', ['D#', 'F', 'F#', 'G#', 'A#', 'B', 'C#']),
+        ('e', 'menor', ['E', 'F#', 'G', 'A', 'B', 'C', 'D']),
+        ('f', 'menor', ['F', 'G', 'G#', 'A#', 'C', 'C#', 'D#']),
+        ('f#', 'menor', ['F#', 'G#', 'A', 'B', 'C#', 'D', 'E']),
+        ('g', 'menor', ['G', 'A', 'A#', 'C', 'D', 'D#', 'F']),
+        ('g#', 'menor', ['G#', 'A#', 'B', 'C#', 'D#', 'E', 'F#']),
+        ('a', 'menor', ['A', 'B', 'C', 'D', 'E', 'F', 'G']),
+        ('a#', 'menor', ['A#', 'C', 'C#', 'D#', 'F', 'F#', 'G#']),
+        ('b', 'menor', ['B', 'C#', 'D', 'E', 'F#', 'G', 'A']),
     ],
 )
-def test_notas_maiores_corretas(tonica, esperado):
-    resultado = escala(tonica, 'maior')
-    assert resultado['notas'] == esperado
-
-
-@mark.parametrize(
-    'tonica,esperado',
-    [
-        ('c', ['C', 'D', 'D#', 'F', 'G', 'G#', 'A#']),
-        ('c#', ['C#', 'D#', 'E', 'F#', 'G#', 'A', 'B']),
-        ('d', ['D', 'E', 'F', 'G', 'A', 'A#', 'C']),
-        ('d#', ['D#', 'F', 'F#', 'G#', 'A#', 'B', 'C#']),
-        ('e', ['E', 'F#', 'G', 'A', 'B', 'C', 'D']),
-        ('f', ['F', 'G', 'G#', 'A#', 'C', 'C#', 'D#']),
-        ('f#', ['F#', 'G#', 'A', 'B', 'C#', 'D', 'E']),
-        ('g', ['G', 'A', 'A#', 'C', 'D', 'D#', 'F']),
-        ('g#', ['G#', 'A#', 'B', 'C#', 'D#', 'E', 'F#']),
-        ('a', ['A', 'B', 'C', 'D', 'E', 'F', 'G']),
-        ('a#', ['A#', 'C', 'C#', 'D#', 'F', 'F#', 'G#']),
-        ('b', ['B', 'C#', 'D', 'E', 'F#', 'G', 'A']),
-    ],
-)
-def test_notas_menores_corretas(tonica, esperado):
-    resultado = escala(tonica, 'menor')
+def test_notas_maiores_corretas(tonica, tonalidade, esperado):
+    resultado = escala(tonica, tonalidade)
     assert resultado['notas'] == esperado
