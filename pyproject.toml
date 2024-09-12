@@ -4,9 +4,25 @@ version = "0.1.0"
 description = ""
 authors = ["johonnes <wjohonnes@gmail.com>"]
 readme = "README.md"
+classifiers = [
+    # Education
+    "Topic :: Education",
+    # CLI / Console
+    "Environment :: Console",
+    # Portuguese
+    "Natural Language :: Portuguese (Brazilian)",
+    # Stable
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.urls]
+"Documentação" = ""
+"Código" = "https://github.com/johonnes/notas-musicais"
+"Bug Tracker" = "https://github.com/johonnes/notas-musicais/issues"
 
 [tool.poetry.scripts]
-escalas = "notas_musicais.cli:app"
+notas-musicais = "notas_musicais.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.12"
