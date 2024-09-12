@@ -1,6 +1,6 @@
 ![logo do projeto](assets/logo.png){width="300" .center}
 
-# Notas musicais
+# Notas music
 
 Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos.
 Toda a aplicação é baseada em um comando chamado `notas-musicais`. Esse comando tem um subcomando relacionado a cada ação que a aplicação pode realizar. Como `escalas`, `acordes` e `campo-harmonico`
