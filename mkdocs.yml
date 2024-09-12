@@ -1,6 +1,6 @@
-site_name: notas-musicais
+site_name: notas-music
 repo_url: https://github.com/johonnes/notas-musicais
-repo_name: notas-musicais
+repo_name: notas-music
 edit_uri: tree/main/docs
 
 theme:
