@@ -8,8 +8,11 @@ build:
   tools:
     python: "3.12.1"
   jobs:
-    pos create environment:
-      - pip install poetry  
+    post_create_environment:
+      - pip install poetry
+      - poetry config virtualenvs.create false
+
+
 
 
   
