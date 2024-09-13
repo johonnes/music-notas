@@ -29,7 +29,7 @@ watch:
     - notas_musicais  
 
 plugins:
-- macros
+# - macros
 - mkdocstrings:
     handlers:
       python:
