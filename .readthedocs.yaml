@@ -10,8 +10,9 @@ build:
   jobs:
     post_create_environment:
       - pip install poetry
-      - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --only docs
-  
+      - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH
+    post_install:
+      - poetry install --only doc
 
 
   
