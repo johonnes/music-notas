@@ -2,7 +2,7 @@
 name = "notas-musicais"
 version = "0.1.0"
 description = "Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos"
-licence = "BeerWare"
+license = "BeerWare"
 authors = ["johonnes <wjohonnes@gmail.com>"]
 readme = "README.md"
 packages = [{include = "notas_musicais"}]
