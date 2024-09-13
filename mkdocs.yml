@@ -28,9 +28,9 @@ extra_css:
 watch:
     - notas_musicais  
 
-plugins: 
-  # - macros
-  - mkdocstrings:
+plugins:
+- macros
+- mkdocstrings:
     handlers:
       python:
         paths: [notas_musicais]
