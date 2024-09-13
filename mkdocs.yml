@@ -3,24 +3,24 @@ repo_url: https://github.com/johonnes/music-notas
 repo_name: music-notas
 edit_uri: tree/main/docs
 
-# theme:
-#   name: material
-#   language: pt-BR
-#   logo: assets/logo.png
-#   favicon: assets/logo.png
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/logo.png
 
 markdown_extensions:
   - attr_list
   - admonition
-  # - pymdownx.tasklist
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
@@ -28,12 +28,12 @@ extra_css:
 watch:
     - notas_musicais  
 
-# plugins:
-# # - macros
-# - mkdocstrings:
-#     handlers:
-#       python:
-#         paths: [notas_musicais]
+plugins:
+- macros
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [notas_musicais]
 
 extra:
   commands:
