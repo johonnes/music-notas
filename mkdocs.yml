@@ -29,8 +29,8 @@ watch:
     - notas_musicais  
 
 plugins: 
-- macros
-- mkdocstrings:
+  - macros
+  - mkdocstrings:
     handlers:
       python:
         paths: [notas_musicais]
