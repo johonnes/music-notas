@@ -1,6 +1,10 @@
 <img src="https://music-notas.readthedocs.io/pt-br/latest/assets/logo.png" width="200">
-[![Documentation Status](https://readthedocs.org/projects/music-notas/badge/?version=latest)](https://music-notas.readthedocs.io/pt-br/latest/?badge=latest)
+
 # Notas music
+
+[![Documentation Status](https://readthedocs.org/projects/music-notas/badge/?version=latest)](https://music-notas.readthedocs.io/pt-br/latest/?badge=latest)[![CI](https://github.com/johonnes/music-notas/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/johonnes/music-notas/actions/workflows/pipeline.yaml)<a href="https://codecov.io/gh/johonnes/music-notas" > 
+ <img src="https://codecov.io/gh/johonnes/music-notas/graph/badge.svg?token=VTY5KDYYMD"/> 
+ </a>
 
 Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos.
 Toda a aplicação é baseada em um comando chamado `notas-musicais`. Esse comando tem um subcomando relacionado a cada ação que a aplicação pode realizar. Como `escalas`, `acordes` e `campo-harmonico`
