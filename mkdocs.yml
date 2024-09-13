@@ -1,7 +1,7 @@
-# site_name: notas-music
-# repo_url: https://github.com/johonnes/notas-music
-# repo_name: notas-music
-# edit_uri: tree/main/docs
+site_name: music-notas
+repo_url: https://github.com/johonnes/music-notas
+repo_name: music-notas
+edit_uri: tree/main/docs
 
 # theme:
 #   name: material
